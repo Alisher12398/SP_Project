@@ -3,6 +3,7 @@ cmd_/home/alisher/Desktop/SP/SP_Project/project.mod.o := gcc -Wp,-MD,/home/alish
 source_/home/alisher/Desktop/SP/SP_Project/project.mod.o := /home/alisher/Desktop/SP/SP_Project/project.mod.c
 
 deps_/home/alisher/Desktop/SP/SP_Project/project.mod.o := \
+    $(wildcard include/config/module/unload.h) \
   include/linux/kconfig.h \
     $(wildcard include/config/cpu/big/endian.h) \
     $(wildcard include/config/booger.h) \
@@ -30,7 +31,6 @@ deps_/home/alisher/Desktop/SP/SP_Project/project.mod.o := \
     $(wildcard include/config/tracing.h) \
     $(wildcard include/config/event/tracing.h) \
     $(wildcard include/config/ftrace/mcount/record.h) \
-    $(wildcard include/config/module/unload.h) \
     $(wildcard include/config/constructors.h) \
     $(wildcard include/config/function/error/injection.h) \
     $(wildcard include/config/strict/module/rwx.h) \

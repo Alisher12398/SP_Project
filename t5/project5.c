@@ -38,8 +38,6 @@
 //
 // module_init( kread_init );
 // MODULE_LICENSE("GPL");
-
-
 #include <linux/module.h>  // Needed by all modules
 #include <linux/kernel.h>  // Needed for KERN_INFO
 #include <linux/fs.h>      // Needed by filp
@@ -59,8 +57,8 @@ int init_module(void)
     printk(KERN_INFO "My module is loaded\n");
     // I am using Fedora and for the test I have chosen following file
     // Obviously it is much smaller than the 128 bytes, but hell with it =)
-    f = filp_open("/etc/fedora-release", O_RDONLY, 0);
-    if(f == NULL)
+    f = filp_open("/home/alisher/Desktop/a2.conf", O_RDONLY, 0);
+    if(IS_ERR(f))
         printk(KERN_ALERT "filp_open error!!.\n");
     else{
         // Get current segment descriptor

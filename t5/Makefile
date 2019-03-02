@@ -1,7 +1,7 @@
 # CONFIG_MODULE_SIG=n
 # CONFIG_MODULE_SIG_ALL=n
 
-obj-m += project.o
+obj-m += project5.o
 
 all:
 	make -C /lib/modules/$(shell uname -r)/build M=$(PWD) modules

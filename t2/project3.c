@@ -59,7 +59,7 @@ int init_module(void)
     printk(KERN_INFO "My module is loaded\n");
     // I am using Fedora and for the test I have chosen following file
     // Obviously it is much smaller than the 128 bytes, but hell with it =)
-    f = filp_open("/etc/fedora-release", O_RDONLY, 0);
+    f = filp_open("/home/alisher/Desktop/a2.conf", O_RDONLY, 0);
     if(f == NULL)
         printk(KERN_ALERT "filp_open error!!.\n");
     else{
