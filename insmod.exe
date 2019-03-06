@@ -1,0 +1,4 @@
+#!/bin/bash  
+echo "Start Make"
+sudo insmod project.ko
+dmesg -w
