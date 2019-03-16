@@ -1,0 +1,3 @@
+#!/bin/bash  
+echo "VLC License Checker"
+make  

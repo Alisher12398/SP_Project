@@ -2,6 +2,7 @@
 #include <linux/kernel.h>
 #include <linux/sched.h>
 #include <linux/sched/signal.h>
+#include <linux/string.h>
 #include <asm/current.h>
 
 int my_kill_proc(pid_t pid, int sig) {
@@ -33,19 +34,18 @@ void fun1(void)
 	// char process_name[] = "\n\n\n\n\n***** Hello\n\n\n";
 	// char process_name2[];
 	// char *process_name3;
-
+	//int pid2 = task_pid_nr(current);
 	bool b = false;
 	//struct task_struct *p = &comm;
 	//char proadas = &(*p).comm;
 	//char proadas2 = (*p).comm;
-	char process_name = 'atom';
-	char *process_name2 = &process_name;
-	char *process_name3 = "atom";
+	char *process_name = "vlc";
 	for_each_process(p){
 		printk(KERN_INFO "%s[%d]\n", (*p).comm, (*p).pid);
 		//char a[] = p->comm;
-		if (p->comm == process_name3){
+		if (strcmp(p->comm, process_name) == 0){
 			b = true;
+			my_kill_proc((*p).pid,9);
 		}
 	}
 
@@ -56,7 +56,8 @@ void fun1(void)
 		printk(KERN_INFO "\n\nfalse\n");
 	}
 
-	//printk(proadas);
+
+	//printk(pid2);
 	//printk(proadas2);
 
 }
@@ -85,6 +86,11 @@ int init_module(void)
 	// if (ret < 0) {
 	//   print
 
+	int i;
+	for (i = 0; i< 100; i++){
+		printk(i);
+		printk("\n");
+	}
 
 	printk(KERN_INFO "\n\n***** Project: end init_module.\n");
 	return 0;
