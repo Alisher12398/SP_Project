@@ -1,2 +1,4 @@
 #!/bin/bash  
-subl
+echo "Open App"
+2048-qt
+

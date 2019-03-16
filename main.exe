@@ -1,0 +1,1293 @@
+#!/bin/bash  
+echo "Start Project"
+
+chmod +x make.exe
+./make.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe
+
+sleep 5s
+
+chmod +x insmod.exe
+./insmod.exe
+
+chmod +x rmmod.exe
+./rmmod.exe

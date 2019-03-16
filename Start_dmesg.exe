@@ -1,5 +1,0 @@
-#!/bin/bash  
-echo "Start dmesg"  
-printf "\n\n\n\n\n\n\n\n" 
-printf "\n\n\n\n\n\n\n\n"
-dmesg -w

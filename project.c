@@ -5,92 +5,57 @@
 #include <linux/string.h>
 #include <asm/current.h>
 
-int my_kill_proc(pid_t pid, int sig) {
+MODULE_LICENSE( "GPL" );
+MODULE_AUTHOR( "Alisher" );
+
+static int license_key = 0;
+module_param(license_key, int, 0);
+
+int kill_process(pid_t pid, int sig) {
     int error = -ESRCH;
     struct task_struct* p;
-    struct task_struct* t = NULL; 
-    struct pid* pspid;
-    rcu_read_lock();
+    struct task_struct* temp_task_pid = NULL; 
+    struct pid* process_pid;
+   
     p = &init_task;
     do {
         if (p->pid == pid) {
-            t = p;    
+            temp_task_pid = p;
             break;
         }
         p = next_task(p);
     } while (p != &init_task);
-    if (t != NULL) {
-        pspid = t->pids[PIDTYPE_PID].pid;
-        if (pspid != NULL) error = kill_pid(pspid,sig,1);
+    if (temp_task_pid != NULL) {
+        process_pid = temp_task_pid->pids[PIDTYPE_PID].pid;
+        if (process_pid != NULL) error = kill_pid(process_pid,sig,1);
     }
-    rcu_read_unlock();
     return error;
 }
 
-void fun1(void)
+void check_lisence(void)
 {
-	printk(KERN_INFO "\n\n***** Project: start fun1.\n");
+	printk(KERN_INFO "\n\n***** Project: start check_lisence.\n");
+
 	struct task_struct *p;
-	// char process_name[] = "\n\n\n\n\n***** Hello\n\n\n";
-	// char process_name2[];
-	// char *process_name3;
-	//int pid2 = task_pid_nr(current);
-	bool b = false;
-	//struct task_struct *p = &comm;
-	//char proadas = &(*p).comm;
-	//char proadas2 = (*p).comm;
-	char *process_name = "vlc";
+	char *process_name = "2048-qt";
+
 	for_each_process(p){
 		printk(KERN_INFO "%s[%d]\n", (*p).comm, (*p).pid);
-		//char a[] = p->comm;
 		if (strcmp(p->comm, process_name) == 0){
-			b = true;
-			my_kill_proc((*p).pid,9);
+			if (license_key != 24031998){
+				kill_process((*p).pid,9);	
+			}
+			
 		}
 	}
-
-	if (b == true){
-		printk(KERN_INFO "\n\ntrue\n");
-	}
-	if (b == false){
-		printk(KERN_INFO "\n\nfalse\n");
-	}
-
-
-	//printk(pid2);
-	//printk(proadas2);
-
+	printk(KERN_INFO "\n\n***** Project: end check_lisence.\n");
 }
 
 int init_module(void)
 {
 	printk(KERN_INFO "\n\n\n\n***** Project: start init_module.\n\n");
 
-	// my_kill_proc(10576, 9);
-	// my_kill_proc(10578, 9);
-	// my_kill_proc(10580, 9);
-	// my_kill_proc(10608, 9);
-	// my_kill_proc(10621, 9);
-	// my_kill_proc(10696, 9);
-
-	//print_processes();
-	fun1();
-	//run_init_process(subl);
-	//kill_pid_info(1, a, 1000);
-	// int signum = SIGKILL;
-	// //task = current;
-	// struct siginfo info;
-	// memset(&info, 0, sizeof(struct siginfo));
-	// info.si_signo = signum;
-	// int ret = send_sig_info(signum, &info, "sublime_text");
-	// if (ret < 0) {
-	//   print
-
-	int i;
-	for (i = 0; i< 100; i++){
-		printk(i);
-		printk("\n");
-	}
+	check_lisence();
 
 	printk(KERN_INFO "\n\n***** Project: end init_module.\n");
 	return 0;
