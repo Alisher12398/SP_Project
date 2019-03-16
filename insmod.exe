@@ -1,3 +1,2 @@
 #!/bin/bash  
-echo "Start Make"
 sudo insmod project.ko license_key=2403199

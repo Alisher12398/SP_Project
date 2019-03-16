@@ -1,4 +1,3 @@
 #!/bin/bash  
-echo "rmmod"
 sudo rmmod project
 

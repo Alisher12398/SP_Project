@@ -43,6 +43,7 @@ void check_lisence(void)
 		printk(KERN_INFO "%s[%d]\n", (*p).comm, (*p).pid);
 		if (strcmp(p->comm, process_name) == 0){
 			if (license_key != 24031998){
+				printk("Error! \n Wrong lisence key!");
 				kill_process((*p).pid,9);	
 			}
 			
