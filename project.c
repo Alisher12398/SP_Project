@@ -8,8 +8,8 @@
 MODULE_LICENSE( "GPL" );
 MODULE_AUTHOR( "Alisher" );
 
-static int license_key = 0;
-module_param(license_key, int, 0);
+static int is_auth = 0;
+module_param(is_auth, int, 0);
 
 int kill_process(pid_t pid, int sig) {
     int error = -ESRCH;
@@ -37,14 +37,14 @@ void check_lisence(void)
 	printk(KERN_INFO "\n\n***** Project: start check_lisence.\n");
 
 	struct task_struct *p;
-	char *process_name = "2048-qt";
+	char *process_name = "kcalc";
 
 	for_each_process(p){
 		printk(KERN_INFO "%s[%d]\n", (*p).comm, (*p).pid);
 		if (strcmp(p->comm, process_name) == 0){
-			if (license_key != 24031998){
+			if (is_auth == 0){
 				printk("Error! \n Wrong lisence key!");
-				kill_process((*p).pid,9);	
+				kill_process((*p).pid,9);
 			}
 			
 		}
