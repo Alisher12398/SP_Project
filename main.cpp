@@ -47,6 +47,7 @@ void writeToFileSerialNumberWithoutSpaces()
 
 	freopen ("system_key.txt","w",stdout);
 	printf("%s" , serialKey);
+	fclose(stdout);
 }
 string login, password;
 char key[1000];
@@ -247,8 +248,49 @@ void key_generator(string s1 , string s2)
 
 	freopen ("user_key.txt","w",stdout);
 	printf("%s" ,key);
+	fclose(stdout);
 }  
 
+char key2[1000];
+int key_size2 = 0;
+void key_generator_temp(string s1 , string s2)
+{
+	string adding_enc = "";
+	for(int i = 0; i < s1.size(); i++)
+	{
+		adding_enc = char_encrypting(s1[i]);
+		if(adding_enc.size() == 2)
+		{
+			key2[key_size2] = adding_enc[0];
+			key2[key_size2 + 1] = adding_enc[1];
+			key_size2 += 2;
+		}
+		else if(adding_enc.size() == 1)
+		{
+			key2[key_size2] = adding_enc[0];
+			key_size2++;
+		}
+	}
+	for(int i = 0; i < s2.size(); i++)
+	{
+		adding_enc = char_encrypting(s2[i]);
+		if(adding_enc.size() == 2)
+		{
+			key2[key_size2] = adding_enc[0];
+			key2[key_size2 + 1] = adding_enc[1];
+			key_size2 += 2;
+		}
+		else if(adding_enc.size() == 1)
+		{
+			key2[key_size2] = adding_enc[0];
+			key_size2++;
+		}
+	}	
+
+	freopen ("user_key_temp.txt","w",stdout);
+	printf("%s" ,key2);
+	fclose(stdout);
+}  
 
 void doLogin()
 {
@@ -271,7 +313,12 @@ void doLogin()
 	printf("Enter your password:\n");
 	cin >> password;
 	printf("Check you PC info...\n");
+	//string ls = GetStringFromCommand("make");
+	//string ls2 = GetStringFromCommand("sudo insmod project.ko");
+	key_generator_temp(login, password);
+	printf("Successfull\n");
 }
+
 
 void doRegister()
 {
@@ -283,6 +330,7 @@ void doRegister()
 	printf("Saving your PC info\n");
 	writeToFileSerialNumberWithoutSpaces();
 	key_generator(login, password);
+	printf("Successfull\n");
 }
 
 
@@ -291,7 +339,7 @@ void helloUser()
 	printf("Hello, User\n");
 	printf("If you have license, please log in. Otherwise register a license.\n");
 	printf("For log in type: 1\n");
-	printf("For register type: 1\n");
+	printf("For register type: 2\n");
 	int userChoise = 0;
 	cin >> userChoise;
 

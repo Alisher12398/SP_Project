@@ -45,12 +45,10 @@ void fs_read(void)
 
     printk(KERN_INFO "Char: %s\n", key);
     
-
 }
 
 
 static int is_auth = 0;
-module_param(is_auth, int, 0);
 
 int kill_process(pid_t pid, int sig) {
     int error = -ESRCH;
@@ -97,7 +95,8 @@ int init_module(void)
 {
 	printk(KERN_INFO "\n\n\n\n***** Project: start init_module.\n\n");
 
-	check_lisence();
+	//check_lisence();
+    fs_read();
 
 	printk(KERN_INFO "\n\n***** Project: end init_module.\n");
 	return 0;

@@ -9,6 +9,7 @@ deps_/home/alisher/Desktop/SP/SP_Project/project.mod.o := \
     $(wildcard include/config/booger.h) \
     $(wildcard include/config/foo.h) \
   include/linux/compiler_types.h \
+    $(wildcard include/config/have/arch/compiler/h.h) \
     $(wildcard include/config/enable/must/check.h) \
     $(wildcard include/config/enable/warn/deprecated.h) \
   include/linux/compiler-gcc.h \
