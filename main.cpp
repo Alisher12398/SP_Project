@@ -308,12 +308,11 @@ void closeModule()
 
 void doLogin()
 {
-
 	printf("Enter your login:\n");
 	cin >> login;
 	printf("Enter your password:\n");
 	cin >> password;
-	printf("Check you PC info...\n");
+	printf("Check you licence...\n");
 	key_generator_temp(login, password);
 
 	for (int i = 0; i < 1000; i++)

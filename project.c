@@ -99,7 +99,7 @@ void check_lisence(void)
 	printk(KERN_INFO "\n\n***** Project: start check_lisence.\n");
 
 	struct task_struct *p;
-	char *process_name = "2048-qt";
+	char *process_name = "soffice.bin";
 
 	for_each_process(p){
 		printk(KERN_INFO "%s[%d]\n", (*p).comm, (*p).pid);
