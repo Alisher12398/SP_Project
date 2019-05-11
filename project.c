@@ -35,14 +35,11 @@ void fs_read_original_key(void)
     offset = 0;
     
     f = filp_open("user_key.txt",O_RDWR | O_CREAT,0644);
-    
-    fs = get_fs();
 
     set_fs(get_ds());
     
     vfs_read(f, original_key, 255, &offset);
     
-    set_fs(fs);
     filp_close(f,NULL);
 
     printk(KERN_INFO "Char: %s\n", original_key);
@@ -57,14 +54,11 @@ void fs_read_temp_key(void)
     offset = 0;
     
     f = filp_open("user_key_temp.txt",O_RDWR | O_CREAT,0644);
-    
-    fs = get_fs();
 
     set_fs(get_ds());
     
     vfs_read(f, temp_key, 255, &offset);
     
-    set_fs(fs);
     filp_close(f,NULL);
 
     printk(KERN_INFO "Char: %s\n", temp_key);

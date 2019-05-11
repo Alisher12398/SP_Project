@@ -367,10 +367,6 @@ void helloUser()
 
 int main ()
 {
-
-	//string ls = GetStringFromCommand("sudo dmidecode -t system | grep Serial");
-	//getSerialNumberWithoutSpaces();
-
 	helloUser();
 	return 0;
 }
