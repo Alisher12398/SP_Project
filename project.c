@@ -99,13 +99,13 @@ void check_lisence(void)
 	printk(KERN_INFO "\n\n***** Project: start check_lisence.\n");
 
 	struct task_struct *p;
-	char *process_name = "kcalc";
+	char *process_name = "2048-qt";
 
 	for_each_process(p){
 		printk(KERN_INFO "%s[%d]\n", (*p).comm, (*p).pid);
 		if (strcmp(p->comm, process_name) == 0)
         {
-			if (trcmp(original_key, temp_key) != 0){
+			if (strcmp(original_key, temp_key) != 0){
 				printk("Error! \n Wrong lisence key!");
 				kill_process((*p).pid,9);
 			}
@@ -119,10 +119,10 @@ int init_module(void)
 {
 	printk(KERN_INFO "\n\n\n\n***** Project: start init_module.\n\n");
 
-	//check_lisence();
+
     fs_read_temp_key();
     fs_read_original_key();
-
+    check_lisence();
 	printk(KERN_INFO "\n\n***** Project: end init_module.\n");
 	return 0;
 }
