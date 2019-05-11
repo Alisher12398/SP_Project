@@ -1,6 +1,9 @@
 #include <iostream>
 #include <string>
 #include <cstdio>
+#include <thread>
+#include <chrono>
+#include <unistd.h>
 
 using namespace std;
 
@@ -292,33 +295,34 @@ void key_generator_temp(string s1 , string s2)
 	fclose(stdout);
 }  
 
+void openModule()
+{
+	string open1 = GetStringFromCommand("make");
+	string open2 = GetStringFromCommand("sudo insmod project.ko");
+}
+
+void closeModule()
+{
+	string open3 = GetStringFromCommand("sudo rmmod project");	
+}
+
 void doLogin()
 {
-	/*
-	printf("Enter your login:\n");
-	cin >> login;
-	printf("Enter your password:\n");
-	cin >> password;
-	printf("Thank You!\n Now we can generate your personal key...\n");
-	key_generator(login, password);
-	printf("The key value is generated, Congratulatons!\n");
-	printf("key value: %s key_size: %d\n" ,key ,key_size);
-
-	freopen ("new_key.txt","w",stdout);
-	printf("%s" ,key);
-	*/
 
 	printf("Enter your login:\n");
 	cin >> login;
 	printf("Enter your password:\n");
 	cin >> password;
 	printf("Check you PC info...\n");
-	//string ls = GetStringFromCommand("make");
-	//string ls2 = GetStringFromCommand("sudo insmod project.ko");
 	key_generator_temp(login, password);
-	printf("Successfull\n");
-}
 
+	for (int i = 0; i < 1000; i++)
+	{
+		usleep(5000000);
+		openModule();
+		closeModule();
+	}
+}
 
 void doRegister()
 {
