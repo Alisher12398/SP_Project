@@ -4,9 +4,50 @@
 #include <linux/sched/signal.h>
 #include <linux/string.h>
 #include <asm/current.h>
+#include <asm/segment.h>
+#include <linux/buffer_head.h>
+#include <linux/init.h>
+#include <linux/fs.h>
+#include <linux/uaccess.h>
+#include <linux/kthread.h>
+#include <linux/sched.h>
+#include <linux/fs_struct.h>
+#include <linux/fdtable.h>
+#include <linux/dcache.h>
+#include <linux/moduleparam.h>
+#include <linux/kernel.h>
+#include <linux/init.h>
+
+#define TAG "Check if wait work"
+
 
 MODULE_LICENSE( "GPL" );
-MODULE_AUTHOR( "Alisher" );
+MODULE_AUTHOR( "Alisher and Rustembek" );
+
+void fs_read(void)
+{
+    struct file *f;
+    char key[255];
+    mm_segment_t fs;
+    loff_t offset;
+    offset = 0;
+    
+    f = filp_open("user_key.txt",O_RDWR | O_CREAT,0644);
+    
+    fs = get_fs();
+
+    set_fs(get_ds());
+    
+    vfs_read(f, key, 255, &offset);
+    
+    set_fs(fs);
+    filp_close(f,NULL);
+
+    printk(KERN_INFO "Char: %s\n", key);
+    
+
+}
+
 
 static int is_auth = 0;
 module_param(is_auth, int, 0);
