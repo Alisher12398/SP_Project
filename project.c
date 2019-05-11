@@ -24,10 +24,12 @@
 MODULE_LICENSE( "GPL" );
 MODULE_AUTHOR( "Alisher and Rustembek" );
 
-void fs_read(void)
+
+char original_key[255] ,  temp_key[255];
+
+void fs_read_original_key(void)
 {
     struct file *f;
-    char key[255];
     mm_segment_t fs;
     loff_t offset;
     offset = 0;
@@ -38,15 +40,36 @@ void fs_read(void)
 
     set_fs(get_ds());
     
-    vfs_read(f, key, 255, &offset);
+    vfs_read(f, original_key, 255, &offset);
     
     set_fs(fs);
     filp_close(f,NULL);
 
-    printk(KERN_INFO "Char: %s\n", key);
+    printk(KERN_INFO "Char: %s\n", original_key);
     
 }
 
+void fs_read_temp_key(void)
+{
+    struct file *f;
+    mm_segment_t fs;
+    loff_t offset;
+    offset = 0;
+    
+    f = filp_open("user_key_temp.txt",O_RDWR | O_CREAT,0644);
+    
+    fs = get_fs();
+
+    set_fs(get_ds());
+    
+    vfs_read(f, temp_key, 255, &offset);
+    
+    set_fs(fs);
+    filp_close(f,NULL);
+
+    printk(KERN_INFO "Char: %s\n", temp_key);
+    
+}
 
 static int is_auth = 0;
 
@@ -80,8 +103,9 @@ void check_lisence(void)
 
 	for_each_process(p){
 		printk(KERN_INFO "%s[%d]\n", (*p).comm, (*p).pid);
-		if (strcmp(p->comm, process_name) == 0){
-			if (is_auth == 0){
+		if (strcmp(p->comm, process_name) == 0)
+        {
+			if (trcmp(original_key, temp_key) != 0){
 				printk("Error! \n Wrong lisence key!");
 				kill_process((*p).pid,9);
 			}
@@ -96,7 +120,8 @@ int init_module(void)
 	printk(KERN_INFO "\n\n\n\n***** Project: start init_module.\n\n");
 
 	//check_lisence();
-    fs_read();
+    fs_read_temp_key();
+    fs_read_original_key();
 
 	printk(KERN_INFO "\n\n***** Project: end init_module.\n");
 	return 0;
